@@ -8,27 +8,30 @@ import GeoMap from "@/components/GeoMap";
 import NetworkGraph from "@/components/NetworkGraph";
 import About from "@/components/About";
 import Footer from "@/components/Footer";
+import LayoutToggle from "@/components/LayoutToggle";
 
 export default function Home() {
   return (
-    <main>
-      <Navbar />
-      <Hero />
-      <div className="section-divider" />
-      <Dashboard />
-      <div className="section-divider" />
-      <FinancialChart />
-      <div className="section-divider" />
-      <CandleChart />
-      <div className="section-divider" />
-      <GlobalMarkets />
-      <div className="section-divider" />
-      <GeoMap />
-      <div className="section-divider" />
-      <NetworkGraph />
-      <div className="section-divider" />
-      <About />
-      <Footer />
-    </main>
+    <LayoutToggle>
+      <main>
+        <Navbar />
+        <Hero />
+        <div className="section-divider" />
+        <Dashboard />
+        <div className="section-divider" />
+        <FinancialChart />
+        <div className="section-divider" />
+        <CandleChart />
+        <div className="section-divider" />
+        <GlobalMarkets />
+        <div className="section-divider" />
+        <GeoMap />
+        <div className="section-divider" />
+        <NetworkGraph />
+        <div className="section-divider" />
+        <About />
+        <Footer />
+      </main>
+    </LayoutToggle>
   );
 }

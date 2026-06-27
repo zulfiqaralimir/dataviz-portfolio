@@ -137,3 +137,57 @@ body {
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.4), rgba(168, 85, 247, 0.4), transparent);
 }
+
+/* ── Tableau Design Tokens ─────────────────────────────────────────── */
+:root {
+  --t-navy:        #1B2A3B;
+  --t-blue:        #4467C4;
+  --t-orange:      #E8762D;
+  --t-canvas:      #F2F2F2;
+  --t-sidebar:     #FAFAFA;
+  --t-border:      #D4D4D4;
+  --t-border-lt:   #EBEBEB;
+  --t-text:        #1A1A1A;
+  --t-text-muted:  #6B6B6B;
+  --t-text-dim:    #4467C4;
+  --t-text-mea:    #1D7D3F;
+  --t-shadow:      0 1px 4px rgba(0,0,0,0.10), 0 0 1px rgba(0,0,0,0.06);
+}
+
+.t-card {
+  background: #FFFFFF;
+  border: 1px solid var(--t-border);
+  border-radius: 2px;
+  box-shadow: var(--t-shadow);
+}
+
+.sheet-tab-active {
+  border-top: 3px solid var(--t-blue);
+  background: #FFFFFF;
+  color: var(--t-text);
+  font-weight: 600;
+}
+
+.pane-header {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--t-text-muted);
+  padding: 8px 12px 4px;
+  border-bottom: 1px solid var(--t-border-lt);
+}
+
+.tb-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: var(--t-text-muted);
+  transition: all 0.1s;
+}
+.tb-btn:hover { background: var(--t-border-lt); border-color: var(--t-border); color: var(--t-text); }
