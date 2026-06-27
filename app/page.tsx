@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Dashboard from "@/components/Dashboard";
 import FinancialChart from "@/components/FinancialChart";
 import CandleChart from "@/components/CandleChart";
+import GlobalMarkets from "@/components/GlobalMarkets";
 import GeoMap from "@/components/GeoMap";
 import NetworkGraph from "@/components/NetworkGraph";
 import About from "@/components/About";
@@ -19,6 +20,8 @@ export default function Home() {
       <FinancialChart />
       <div className="section-divider" />
       <CandleChart />
+      <div className="section-divider" />
+      <GlobalMarkets />
       <div className="section-divider" />
       <GeoMap />
       <div className="section-divider" />

@@ -7,6 +7,7 @@ const links = [
   { label: "Dashboard", href: "#dashboard" },
   { label: "Financial", href: "#financial" },
   { label: "Candles", href: "#candles" },
+  { label: "Global", href: "#global" },
   { label: "Geospatial", href: "#geospatial" },
   { label: "Network", href: "#network" },
   { label: "About", href: "#about" },
