@@ -64,6 +64,11 @@ const FILTER_OPTIONS: Record<string, { label: string; options: string[] }[]> = {
     { label: "Variables", options: ["Price/Volume/MCap/PE","Revenue/Users/Conversion/Churn"] },
     { label: "Color By",  options: ["Sector","Region"] },
   ],
+  Bubble: [
+    { label: "Speed",  options: ["Normal","Slow","Fast"] },
+    { label: "X Axis", options: ["Revenue Growth","Profit Margin","R&D Spend %"] },
+    { label: "Y Axis", options: ["User Growth","Customer Retention","NPS Score"] },
+  ],
 };
 
 export default function DataPane({ activeSheet, filters, onFilterChange }: DataPaneProps) {

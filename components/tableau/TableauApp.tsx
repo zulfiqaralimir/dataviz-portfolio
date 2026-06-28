@@ -13,6 +13,7 @@ import NetworkSheet   from "./sheets/NetworkSheet";
 import HeatmapSheet   from "./sheets/HeatmapSheet";
 import StreamSheet    from "./sheets/StreamSheet";
 import ScatterSheet   from "./sheets/ScatterSheet";
+import BubbleSheet    from "./sheets/BubbleSheet";
 
 function SheetCanvas({ activeSheet, filters }: { activeSheet: string; filters: Record<string,string> }) {
   switch (activeSheet) {
@@ -24,6 +25,7 @@ function SheetCanvas({ activeSheet, filters }: { activeSheet: string; filters: R
     case "Heatmaps":       return <HeatmapSheet   filters={filters} />;
     case "Stream":         return <StreamSheet    filters={filters} />;
     case "Scatter":        return <ScatterSheet   filters={filters} />;
+    case "Bubble":         return <BubbleSheet    filters={filters} />;
     default:               return <Overview       filters={filters} />;
   }
 }
