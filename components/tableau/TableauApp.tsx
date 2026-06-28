@@ -10,6 +10,9 @@ import CandleSheet    from "./sheets/CandleSheet";
 import GlobalSheet    from "./sheets/GlobalSheet";
 import GeoSheet       from "./sheets/GeoSheet";
 import NetworkSheet   from "./sheets/NetworkSheet";
+import HeatmapSheet   from "./sheets/HeatmapSheet";
+import StreamSheet    from "./sheets/StreamSheet";
+import ScatterSheet   from "./sheets/ScatterSheet";
 
 function SheetCanvas({ activeSheet, filters }: { activeSheet: string; filters: Record<string,string> }) {
   switch (activeSheet) {
@@ -18,6 +21,9 @@ function SheetCanvas({ activeSheet, filters }: { activeSheet: string; filters: R
     case "Global Markets": return <GlobalSheet    filters={filters} />;
     case "Geographic":     return <GeoSheet       filters={filters} />;
     case "Network":        return <NetworkSheet   filters={filters} />;
+    case "Heatmaps":       return <HeatmapSheet   filters={filters} />;
+    case "Stream":         return <StreamSheet    filters={filters} />;
+    case "Scatter":        return <ScatterSheet   filters={filters} />;
     default:               return <Overview       filters={filters} />;
   }
 }

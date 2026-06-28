@@ -52,6 +52,18 @@ const FILTER_OPTIONS: Record<string, { label: string; options: string[] }[]> = {
   Network: [
     { label: "Group",      options: ["All","Core Product","Infrastructure","Commerce","Reporting"] },
   ],
+  Heatmaps: [
+    { label: "Heatmap Type", options: ["Calendar","Correlation Matrix","Risk Matrix"] },
+    { label: "Year",         options: ["2024","2023","2022"] },
+  ],
+  Stream: [
+    { label: "Period",  options: ["12 Months","24 Months","36 Months"] },
+    { label: "Streams", options: ["All","Top 3","Top 2"] },
+  ],
+  Scatter: [
+    { label: "Variables", options: ["Price/Volume/MCap/PE","Revenue/Users/Conversion/Churn"] },
+    { label: "Color By",  options: ["Sector","Region"] },
+  ],
 };
 
 export default function DataPane({ activeSheet, filters, onFilterChange }: DataPaneProps) {

@@ -6,6 +6,9 @@ import CandleChart from "@/components/CandleChart";
 import GlobalMarkets from "@/components/GlobalMarkets";
 import GeoMap from "@/components/GeoMap";
 import NetworkGraph from "@/components/NetworkGraph";
+import HeatmapSection from "@/components/HeatmapSection";
+import StreamGraph from "@/components/StreamGraph";
+import ScatterMatrix from "@/components/ScatterMatrix";
 import About from "@/components/About";
 import Footer from "@/components/Footer";
 import LayoutToggle from "@/components/LayoutToggle";
@@ -28,6 +31,12 @@ export default function Home() {
         <GeoMap />
         <div className="section-divider" />
         <NetworkGraph />
+        <div className="section-divider" />
+        <HeatmapSection />
+        <div className="section-divider" />
+        <StreamGraph />
+        <div className="section-divider" />
+        <ScatterMatrix />
         <div className="section-divider" />
         <About />
         <Footer />

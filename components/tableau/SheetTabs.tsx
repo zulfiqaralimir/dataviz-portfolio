@@ -1,5 +1,5 @@
 "use client";
-import { Plus, BarChart2, TrendingUp, Globe, MapPin, Network } from "lucide-react";
+import { Plus, BarChart2, TrendingUp, Globe, MapPin, Network, LayoutGrid, Layers, Crosshair } from "lucide-react";
 
 export const SHEETS = [
   { id: "Overview",       label: "Overview",        icon: BarChart2 },
@@ -8,6 +8,9 @@ export const SHEETS = [
   { id: "Global Markets", label: "Global Markets",  icon: Globe },
   { id: "Geographic",     label: "Geographic",      icon: MapPin },
   { id: "Network",        label: "Network",         icon: Network },
+  { id: "Heatmaps",       label: "Heatmaps",        icon: LayoutGrid },
+  { id: "Stream",         label: "Stream Graph",    icon: Layers },
+  { id: "Scatter",        label: "Scatter Matrix",  icon: Crosshair },
 ];
 
 interface Props {
