@@ -10,6 +10,7 @@ import BubbleChart from "@/components/BubbleChart";
 import HeatmapSection from "@/components/HeatmapSection";
 import StreamGraph from "@/components/StreamGraph";
 import ScatterMatrix from "@/components/ScatterMatrix";
+import McKinseyCharts from "@/components/McKinseyCharts";
 import About from "@/components/About";
 import Footer from "@/components/Footer";
 import LayoutToggle from "@/components/LayoutToggle";
@@ -40,6 +41,8 @@ export default function Home() {
         <StreamGraph />
         <div className="section-divider" />
         <ScatterMatrix />
+        <div className="section-divider" />
+        <McKinseyCharts />
         <div className="section-divider" />
         <About />
         <Footer />

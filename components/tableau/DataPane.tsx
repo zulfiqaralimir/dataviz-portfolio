@@ -69,6 +69,22 @@ const FILTER_OPTIONS: Record<string, { label: string; options: string[] }[]> = {
     { label: "X Axis", options: ["Revenue Growth","Profit Margin","R&D Spend %"] },
     { label: "Y Axis", options: ["User Growth","Customer Retention","NPS Score"] },
   ],
+  Waterfall: [
+    { label: "View", options: ["P&L Bridge","Revenue Bridge","Cost Bridge"] },
+  ],
+  Mekko: [
+    { label: "Metric", options: ["Market Share","Revenue Mix","Growth Rate"] },
+  ],
+  DotPlot: [
+    { label: "Period", options: ["2020 vs 2024","2022 vs 2024","2019 vs 2024"] },
+  ],
+  Pyramid: [
+    { label: "Segment", options: ["Age Group","Income Band","Product Tier"] },
+  ],
+  StackedBar: [
+    { label: "Period", options: ["2019-2024","2020-2024","2021-2024"] },
+    { label: "View",   options: ["Revenue Mix","User Mix","Profit Mix"] },
+  ],
 };
 
 export default function DataPane({ activeSheet, filters, onFilterChange }: DataPaneProps) {

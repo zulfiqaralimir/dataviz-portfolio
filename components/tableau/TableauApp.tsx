@@ -14,6 +14,11 @@ import HeatmapSheet   from "./sheets/HeatmapSheet";
 import StreamSheet    from "./sheets/StreamSheet";
 import ScatterSheet   from "./sheets/ScatterSheet";
 import BubbleSheet    from "./sheets/BubbleSheet";
+import WaterfallSheet from "./sheets/WaterfallSheet";
+import MekkoSheet     from "./sheets/MekkoSheet";
+import DotPlotSheet   from "./sheets/DotPlotSheet";
+import PyramidSheet   from "./sheets/PyramidSheet";
+import StackedBarSheet from "./sheets/StackedBarSheet";
 
 function SheetCanvas({ activeSheet, filters }: { activeSheet: string; filters: Record<string,string> }) {
   switch (activeSheet) {
@@ -25,8 +30,13 @@ function SheetCanvas({ activeSheet, filters }: { activeSheet: string; filters: R
     case "Heatmaps":       return <HeatmapSheet   filters={filters} />;
     case "Stream":         return <StreamSheet    filters={filters} />;
     case "Scatter":        return <ScatterSheet   filters={filters} />;
-    case "Bubble":         return <BubbleSheet    filters={filters} />;
-    default:               return <Overview       filters={filters} />;
+    case "Bubble":         return <BubbleSheet     filters={filters} />;
+    case "Waterfall":      return <WaterfallSheet  filters={filters} />;
+    case "Mekko":          return <MekkoSheet      filters={filters} />;
+    case "DotPlot":        return <DotPlotSheet    filters={filters} />;
+    case "Pyramid":        return <PyramidSheet    filters={filters} />;
+    case "StackedBar":     return <StackedBarSheet filters={filters} />;
+    default:               return <Overview        filters={filters} />;
   }
 }
 
